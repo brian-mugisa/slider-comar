@@ -1,0 +1,160 @@
+.hero.hero-landing a {
+  text-decoration: none !important;
+  color: #ffffff;
+}
+
+.hero.hero-landing .container-fluid,
+.hero.hero-landing .row {
+  height: 80vh;
+}
+
+@media screen and (min-width: 559px) {
+  .hero.hero-landing * {
+    overflow: hidden;
+    overflow-wrap: break-word;
+  }
+  .hero.hero-landing .text-content-mobile {
+    display: none !important;
+  }
+  .hero.hero-landing .side {
+    width: 150%;
+  }
+  .hero.hero-landing .stacked {
+    position: absolute;
+    top: 0;
+  }
+  .hero.hero-landing .medical-side {
+    transform: translate(-58%);
+    clip-path: url(#wave);
+  }
+  .hero.hero-landing .packaging-side {
+    transform: translate(21%);
+    clip-path: url(#wave2);
+  }
+}
+
+.hero.hero-landing .medical-side {
+  background: linear-gradient(to right, #0a4291b2, #007de4b9),
+    url("images/3cars.jpg");
+}
+
+.hero.hero-landing .side {
+  background-size: cover !important;
+  transition: 2s;
+}
+
+.hero.hero-landing .packaging-side {
+  background: linear-gradient(90deg, #43beacbd 0%, #00e7b9b4 100%),
+    url("images/cherry.jpg");
+}
+
+/* text layer */
+.hero.hero-landing .text-content {
+  background: transparent;
+  z-index: 3;
+  width: 100% !important;
+}
+
+.hero.hero-landing .activate {
+  width: 80%;
+}
+
+.hero.hero-landing .activate h2 {
+  font-size: 64px;
+}
+
+.hero.hero-landing .deactivate {
+  width: 20%;
+}
+
+.hero.hero-landing h2 {
+  font-size: 48px;
+}
+
+.hero.hero-landing .deactivate h2 {
+  font-size: 39px;
+}
+
+.hero.hero-landing .btn {
+  border: none;
+}
+
+.hero.hero-landing .package .btn {
+  color: #333333 !important;
+  background-color: #00e7ba !important;
+}
+
+/*paragraph*/
+.hero.hero-landing .subhead {
+  display: none;
+  opacity: 0;
+}
+
+.hero.hero-landing .activate .subhead {
+  display: inline-block;
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .hero.hero-landing .text-content {
+    display: none !important;
+  }
+  .hero.hero-landing .medical-side {
+    clip-path: url(#wave3);
+  }
+  .hero.hero-landing .packaging-side {
+    clip-path: url(#wave4);
+    margin-top: -16vh;
+  }
+}
